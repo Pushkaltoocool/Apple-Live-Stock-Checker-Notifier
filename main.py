@@ -3,7 +3,7 @@ import time, json
 from notify import notify_both
 
 URL = "https://www.apple.com/sg/shop/buy-iphone/iphone-17-pro/6.9-inch-display-512gb-silver"
-POSTAL_CODE = "820190"
+POSTAL_CODE = "819666"
 
 def text_or_none(locator):
     try:
@@ -170,3 +170,4 @@ def run():
 
 if __name__ == "__main__":
     run()
+
