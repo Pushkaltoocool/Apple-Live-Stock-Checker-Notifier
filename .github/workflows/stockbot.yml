@@ -31,5 +31,6 @@ jobs:
           pip install playwright
           playwright install chromium --with-deps
 
-      - name: Run bot
-        run: python main.py
+      # Use a virtual display so Playwright can render full UI on headless servers
+      - name: Run bot with virtual display
+        run: xvfb-run --auto-servernum --server-args='-screen 0 1280x720x24' python main.py
